@@ -1,0 +1,88 @@
+{
+  "version": "14.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "CdkFirstAppStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "CdkFirstAppStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/CdkFirstAppStack/mybucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mybucket160F8132",
+            "trace": [
+              "new Bucket (/Users/oloruntolaore-aruwaji/Documents/github test/cdk_tutorial/cdk_first_app/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:808:22)",
+              "new CdkFirstAppStack (/Users/oloruntolaore-aruwaji/Documents/github test/cdk_tutorial/cdk_first_app/lib/cdk_first_app-stack.ts:10:22)",
+              "Object.<anonymous> (/Users/oloruntolaore-aruwaji/Documents/github test/cdk_tutorial/cdk_first_app/bin/cdk_first_app.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Module.m._compile (/Users/oloruntolaore-aruwaji/Documents/github test/cdk_tutorial/cdk_first_app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/oloruntolaore-aruwaji/Documents/github test/cdk_tutorial/cdk_first_app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/oloruntolaore-aruwaji/Documents/github test/cdk_tutorial/cdk_first_app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/oloruntolaore-aruwaji/Documents/github test/cdk_tutorial/cdk_first_app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1109:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1138:10)",
+              "Module.load (node:internal/modules/cjs/loader:989:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:829:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkFirstAppStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/oloruntolaore-aruwaji/Documents/github test/cdk_tutorial/cdk_first_app/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/oloruntolaore-aruwaji/Documents/github test/cdk_tutorial/cdk_first_app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/oloruntolaore-aruwaji/Documents/github test/cdk_tutorial/cdk_first_app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/oloruntolaore-aruwaji/Documents/github test/cdk_tutorial/cdk_first_app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/oloruntolaore-aruwaji/Documents/github test/cdk_tutorial/cdk_first_app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/oloruntolaore-aruwaji/Documents/github test/cdk_tutorial/cdk_first_app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/oloruntolaore-aruwaji/Documents/github test/cdk_tutorial/cdk_first_app/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/oloruntolaore-aruwaji/Documents/github test/cdk_tutorial/cdk_first_app/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (node:events:514:26)",
+              "process.emit (node:events:394:28)",
+              "process.emit (node:domain:470:12)",
+              "process.emit (/Users/oloruntolaore-aruwaji/Documents/github test/cdk_tutorial/cdk_first_app/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/CdkFirstAppStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/oloruntolaore-aruwaji/Documents/github test/cdk_tutorial/cdk_first_app/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/Users/oloruntolaore-aruwaji/Documents/github test/cdk_tutorial/cdk_first_app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/oloruntolaore-aruwaji/Documents/github test/cdk_tutorial/cdk_first_app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/oloruntolaore-aruwaji/Documents/github test/cdk_tutorial/cdk_first_app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/oloruntolaore-aruwaji/Documents/github test/cdk_tutorial/cdk_first_app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/oloruntolaore-aruwaji/Documents/github test/cdk_tutorial/cdk_first_app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/oloruntolaore-aruwaji/Documents/github test/cdk_tutorial/cdk_first_app/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/oloruntolaore-aruwaji/Documents/github test/cdk_tutorial/cdk_first_app/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (node:events:514:26)",
+              "process.emit (node:events:394:28)",
+              "process.emit (node:domain:470:12)",
+              "process.emit (/Users/oloruntolaore-aruwaji/Documents/github test/cdk_tutorial/cdk_first_app/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "CdkFirstAppStack"
+    }
+  }
+}
